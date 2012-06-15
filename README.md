@@ -1,0 +1,4 @@
+fitTables
+=========
+
+jQuery fitTables
