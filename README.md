@@ -34,7 +34,13 @@ $('table').fitTable();
 
 // custom options configured for a specific table
 $('#example1').fitTable({
-	
+	max: 45,
+	min: 10,
+	compressor: 7,
+	padding: 3,
+	height: '100%',
+	adjust_parents: true,
+	use_styles: true
 });
 ```
 
