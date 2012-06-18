@@ -6,7 +6,7 @@ jQuery fitTables
 A jQuery plugin to create responsive tables by Gary Hepting
 
 Watch, fork and pull from: [https://github.com/ghepting/fitTables]
-Demos available at: [http://ghepting.github.com/fitTables]
+Demo available at: [http://garyhepting.com/fitTables-js.php]
 
 
 
