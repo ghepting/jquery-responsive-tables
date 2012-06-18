@@ -11,9 +11,25 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 		<link rel="stylesheet" href="fitTables.css" />
 		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="fitTables.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('table').fitTable({
+					max: 45,
+					min: 10,
+					compressor: 7,
+					padding: 3,
+					height: '80%',
+					adjust_parents: true,
+					use_styles: true
+				});
+			});
+		</script>
 	</head>
 	<body>
+		<h1>FitTables Demo</h1>
+		<div style="padding:25px;">
 		<table cellpadding="0" cellspacing="0">
 			<thead>
 				<tr>
@@ -64,5 +80,6 @@
 				</tr>
 			</tbody>
 		</table>
+		</div>
     </body>
 </html>
