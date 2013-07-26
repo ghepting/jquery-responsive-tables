@@ -5,8 +5,8 @@ jquery responsive tables
 
 A jQuery plugin to create responsive tables by Gary Hepting
 
-Watch, fork and pull from: [https://github.com/ghepting/fitTables]
-Demo available at: [http://garyhepting.com/fitTables-js]
+Watch, fork and pull from: [https://github.com/ghepting/jquery-responsive-tables]
+Demo available at: [http://garyhepting.com/jquery-responsive-tables]
 
 
 
@@ -18,15 +18,15 @@ Demo available at: [http://garyhepting.com/fitTables-js]
 
 ## Usage
 
-In the &lt;head&gt; of your document, link jQuery, fitTables.js and fitTables.css (optional)
+In the &lt;head&gt; of your document, link jQuery, jquery-responsive-tables.js and jquery-responsive-tables.css (optional)
 
 ```html
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="./fitTables.js"></script>
-<link rel="stylesheet" type="text/css" href="./fitTables.css" />
+<script type="text/javascript" src="./jquery-responsive-tables.js"></script>
+<link rel="stylesheet" type="text/css" href="./jquery-responsive-tables.css" />
 ```
 
-Configure which tables should be initialized with fitTables. You can specify by classname, tag or single table by a unique element id.
+Configure which tables should be initialized with jquery-responsive-tables. You can specify by classname, tag or single table by a unique element id.
 
 ```javascript
 // basic usage with no customizations
@@ -63,7 +63,7 @@ Options:
 
 `adjust_parents` &mdash; if height option specified, force parent elements height to be 100% of viewport
 
-`use_styles` &mdash; apply styles from fitTables.css
+`use_styles` &mdash; apply styles from jquery-responsive-tables.css
 
 
 
