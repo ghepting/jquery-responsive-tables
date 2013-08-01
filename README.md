@@ -1,75 +1,38 @@
 jquery-responsive-tables
-================
+====
 
-jquery responsive tables
+A jQuery plugin to make tabular data responsive.
 
-A jQuery plugin to create responsive tables by Gary Hepting
-
-Watch, fork and pull from: [https://github.com/ghepting/jquery-responsive-tables]
-Demo available at: [http://garyhepting.com/jquery-responsive-tables]
+View the demo at [http://garyhepting.com/jquery-responsive-tables]
 
 
+Installation:
+----
 
-## Dependencies
-
-**[jQuery](http://jquery.com/)**
-
-
-
-## Usage
-
-In the &lt;head&gt; of your document, link jQuery, jquery-responsive-tables.js and jquery-responsive-tables.css (optional)
+Initialize the plugin:
 
 ```html
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="./jquery-responsive-tables.js"></script>
-<link rel="stylesheet" type="text/css" href="./jquery-responsive-tables.css" />
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('table.responsive').responsiveTables();
+  });
+</script>
 ```
 
-Configure which tables should be initialized with jquery-responsive-tables. You can specify by classname, tag or single table by a unique element id.
+Configurations can be added to the markup of each table with simple data attributes:
 
-```javascript
-// basic usage with no customizations
-$('table').fitTable();
-
-// custom options configured for a specific table
-$('#example1').fitTable({
-	max: 45,
-	min: 10,
-	compressor: 7,
-	padding: 3,
-	height: '100%',
-	adjust_parents: true,
-	use_styles: true
-});
+```html
+<table class="responsive" data-min="10" data-max="30" cellpadding="0" cellspacing="0">
 ```
 
+Fullscreen:
 
+```html
+<table class="responsive" data-height="100%" data-min="10" data-max="25" cellpadding="0" cellspacing="0">
+```
 
-How to use
-=========
+Complete Options:
 
-Options:
-
-`max` &mdash; maximum font size in pixels
-
-`min` &mdash; minimum font size in pixels
-
-`compressor` &mdash; strength of text compressor (how aggressively to shrink the font)
-
-`padding` &mdash; padding (whole integer value -- larger number for more padding)
-
-`height` &mdash; 'auto' to leave heights alone, percentage to apply responsive heights -- '100%' will fit tables (and containers) to viewport height
-
-`adjust_parents` &mdash; if height option specified, force parent elements height to be 100% of viewport
-
-`use_styles` &mdash; apply styles from jquery-responsive-tables.css
-
-
-
-Changelog
----------
-
-**Beta v0.1**
-
- * Public beta release
+```html
+<table class="responsive" data-compression="5" data-min="10" data-max="25" data-width="100%" data-height="100%" data-adjust-parents="true" data-styled="true" cellpadding="0" cellspacing="0">
+```
