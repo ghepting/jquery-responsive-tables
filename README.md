@@ -3,7 +3,7 @@ jquery-responsive-tables
 
 A jQuery plugin to make tabular data responsive.
 
-View the demo at [http://garyhepting.com/jquery-responsive-tables]
+View the demo at [http://ghepting.github.io/jquery-responsive-tables]
 
 
 Installation:
